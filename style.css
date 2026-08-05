@@ -1,13 +1,13 @@
 :root {
-  --bg: #0a0a12;
-  --bg-alt: #0f0f1a;
-  --surface: #14141f;
-  --border: #26263a;
-  --text: #f2f2f7;
-  --text-dim: #9797ad;
-  --accent-1: #7c5cff;
-  --accent-2: #00e0ff;
-  --accent-3: #ff5c9e;
+  --bg: #f8f8fb;
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --border: #e3e3ec;
+  --text: #17171f;
+  --text-dim: #5c5c72;
+  --accent-1: #6c3ff0;
+  --accent-2: #0091ab;
+  --accent-3: #d63b83;
   --gradient: linear-gradient(135deg, var(--accent-1) 0%, var(--accent-2) 100%);
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -36,7 +36,7 @@ img { max-width: 100%; display: block; }
   transform: translateX(-50%);
   width: 1200px;
   height: 1200px;
-  background: radial-gradient(circle, rgba(124,92,255,0.18) 0%, rgba(0,224,255,0.08) 40%, transparent 70%);
+  background: radial-gradient(circle, rgba(108,63,240,0.12) 0%, rgba(0,145,171,0.06) 40%, transparent 70%);
   pointer-events: none;
   z-index: 0;
   filter: blur(40px);
@@ -50,7 +50,7 @@ img { max-width: 100%; display: block; }
   right: 0;
   z-index: 100;
   backdrop-filter: blur(12px);
-  background: rgba(10, 10, 18, 0.7);
+  background: rgba(248, 248, 251, 0.75);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -272,11 +272,13 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 32px 26px;
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 1px 3px rgba(23, 23, 31, 0.06);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 .card:hover {
   transform: translateY(-6px);
   border-color: var(--accent-1);
+  box-shadow: 0 12px 28px rgba(23, 23, 31, 0.1);
 }
 .card-icon { font-size: 1.8rem; margin-bottom: 16px; }
 .card h3 {
