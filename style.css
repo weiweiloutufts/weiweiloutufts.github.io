@@ -240,6 +240,16 @@ img { max-width: 100%; display: block; }
 }
 .lead strong { color: var(--text); font-weight: 600; }
 
+.note {
+  font-style: italic;
+  color: var(--text-dim);
+  border-left: 3px solid var(--accent-1);
+  padding-left: 18px;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+.note strong { color: var(--text); font-weight: 600; font-style: normal; }
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
